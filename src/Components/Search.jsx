@@ -16,7 +16,7 @@ function SearchField() {
 
     useEffect(() => {
         const fetchData = async () => {
-            fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=59a0db4983af7514ceccfaa37492262c`)
+            await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=59a0db4983af7514ceccfaa37492262c`)
                 .then(res => res.json())
                 .then(resu => setCityData(resu))
 
