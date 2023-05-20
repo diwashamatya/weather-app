@@ -39,7 +39,7 @@ function SearchField() {
 
             </div>
             <Routes>
-                <Route path='/card' element={<DisplayCard data={cityData} />}></Route>
+                <Route path='/card' >{<DisplayCard data={cityData} /></Route>
             </Routes>
         </div>
 
